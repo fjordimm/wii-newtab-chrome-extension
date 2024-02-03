@@ -1,0 +1,15 @@
+{
+	"manifest_version": 3,
+	"name": "My New Tab Extension",
+	"description": "weeeeeeeeeeeee",
+	"version": "1.0.0",
+	"author": "Placeholder Author",
+	"chrome_url_overrides":
+	{
+		"newtab": "index.html"
+	},
+	"permissions":
+	[
+		"storage"
+	]
+}
