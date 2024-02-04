@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&display=swap');
 
 @font-face
 {
@@ -9,15 +9,10 @@
 
 :root
 {
-	--sans-serif-font: 'Nunito Sans', sans-serif;
+	--channel-title-font: 'Roboto Condensed', sans-serif;
 	--digital-clock-font: 'e1234', monospace;
 
 	--thing: 61px 33px;
-}
-
-p
-{
-	font-family: var(--sans-serif-font);
 }
 
 body
@@ -34,22 +29,41 @@ body
 
 .channels-container
 {
-	margin: 23px 70px 5px 96px;
-	padding: 10px;
-
-	background-color: purple;
+	margin: 59px 0px 0px 102px;
+	padding: 0px;
 
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	gap: 12px;
 }
 
-.channel-box
+.channel-svg
 {
-	min-width: 250px;
-	min-height: 136px;
+	margin: 0;
+	padding: 0;
+}
 
-	background-color: greenyellow;
+.channel
+{
+	margin: 0;
+	padding: 0;
 
-	border-radius: 5px 10px 5px 10px / 10px 5px 10px 5px;
+	min-width: 238px;
+	min-height: 124px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.channel-title
+{
+	margin: 0;
+	padding: 3px 0 0 0;
+
+	font-family: var(--channel-title-font);
+	font-weight: 500;
+	font-size: 25px;
+	color: white;
 }
