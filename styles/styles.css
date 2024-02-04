@@ -1,7 +1,52 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+
+@font-face
+{
+	font-family: 'e1234';
+	src: url(../fonts/e1234.regular.ttf);
+}
 
 :root
 {
-	--sans-serif-font: 'Palanquin', sans-serif;
+	--sans-serif-font: 'Nunito Sans', sans-serif;
+	--digital-clock-font: 'e1234', monospace;
+
+	--thing: 61px 33px;
+}
+
+p
+{
+	font-family: var(--sans-serif-font);
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+.maindiv
+{
+	margin: 0;
+	padding: 0;
+}
+
+.channels-container
+{
+	margin: 23px 70px 5px 96px;
+	padding: 10px;
+
+	background-color: purple;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.channel-box
+{
+	min-width: 61px;
+	min-height: 33px;
+	background-color: greenyellow;
 }
