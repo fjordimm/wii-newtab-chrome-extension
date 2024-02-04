@@ -46,7 +46,10 @@ body
 
 .channel-box
 {
-	min-width: 61px;
-	min-height: 33px;
+	min-width: 251px;
+	min-height: 136px;
+
 	background-color: greenyellow;
+
+	border-radius: 5px 10px 5px 10px / 10px 5px 10px 5px;
 }
