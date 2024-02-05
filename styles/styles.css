@@ -30,10 +30,20 @@ body
 	padding: 0;
 }
 
+.channels-container
+{
+	margin: 0 0 0 0;
+	padding: 59px 0 14px 0;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .channels-container-column
 {
-	margin: 59px 0px 0px 102px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 
 	display: flex;
 	flex-direction: column;
