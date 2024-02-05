@@ -4,15 +4,15 @@
 
 @font-face
 {
-	font-family: 'e1234';
-	src: url(../fonts/e1234.regular.ttf);
+	font-family: 'Digital Display';
+	src: url(../fonts/Digital-Display.ttf);
 }
 
 :root
 {
 	--channel-title-font: 'Roboto Condensed', sans-serif;
 	--blank-channel-text-font: 'Lato', sans-serif;
-	--digital-clock-font: 'e1234', monospace;
+	--digital-clock-font: 'Digital Display', monospace;
 
 	--channel-inside-width: 242px;
 	--channel-inside-height: 128px;
@@ -190,10 +190,11 @@ body
 
 .digital-clock-text
 {
-	margin: 3px 0 0 0;
+	margin: 4px 0 0 0;
 	padding: 0;
 
 	font-family: var(--digital-clock-font);
-	font-size: 60px;
+	font-size: 88px;
+	font-weight: normal;
 	color: gray;
 }
