@@ -52,8 +52,6 @@ body
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	
-	overflow: hidden;
 }
 
 .channels-container-column
@@ -146,4 +144,13 @@ body
 {
 	margin: 0;
 	padding: 0;
+}
+
+.bottom-bar-middle
+{
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	flex-direction: column;
 }
