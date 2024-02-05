@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 
 @font-face
 {
@@ -10,9 +11,11 @@
 :root
 {
 	--channel-title-font: 'Roboto Condensed', sans-serif;
+	--blank-channel-text-font: 'Lato', sans-serif;
 	--digital-clock-font: 'e1234', monospace;
 
-	--thing: 61px 33px;
+	--channel-inside-width: 242px;
+	--channel-inside-height: 128px;
 }
 
 body
@@ -60,12 +63,37 @@ body
 	margin: 0;
 	padding: 0;
 
-	min-width: 242px;
-	min-height: 128px;
+	min-width: var(--channel-inside-width);
+	min-height: var(--channel-inside-height);
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.blank-channel
+{
+	margin: 0;
+	padding: 0;
+
+	min-width: var(--channel-inside-width);
+	min-height: var(--channel-inside-height);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.blank-channel-text
+{
+	margin: 0;
+	padding: 0;
+
+	font-family: var(--blank-channel-text-font);
+	font-weight: 500;
+	font-size: 40px;
+	color: #C3C3C3;
 }
 
 .channel-title
