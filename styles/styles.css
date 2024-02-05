@@ -47,6 +47,7 @@ body
 		to bottom,
 		#F0F0F0,
 		#F0F0F0 33.33%,
+		#E4E4E4 33.33%,
 		#E4E4E4 66.67%,
 		#E4E4E4
 	);
@@ -118,6 +119,17 @@ body
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	background: linear-gradient(
+		to bottom,
+		#D8D8D8,
+		#D8D8D8 28.57%,
+		#CFCFCF 28.57%,
+		#CFCFCF 71.43%,
+		#CFCFCF
+	);
+	background-size: 100% 7px;
+	border-radius: 15px;
 }
 
 .blank-channel-text
@@ -128,7 +140,7 @@ body
 	font-family: var(--blank-channel-text-font);
 	font-weight: 500;
 	font-size: 40px;
-	color: #BEBEBE;
+	color: #00000007;
 }
 
 .channel-title
