@@ -1,4 +1,5 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 
@@ -13,6 +14,7 @@
 	--channel-title-font: 'Roboto Condensed', sans-serif;
 	--blank-channel-text-font: 'Lato', sans-serif;
 	--digital-clock-font: 'Digital Display', monospace;
+	--date-font: 'Roboto', sans-serif;
 
 	--channel-inside-width: 242px;
 	--channel-inside-height: 128px;
@@ -220,5 +222,16 @@ body
 	font-family: var(--digital-clock-font);
 	font-size: 88px;
 	font-weight: normal;
-	color: gray;
+	color: #9B9B9B;
+}
+
+.date-text
+{
+	margin: 0;
+	padding: 6px 0 0 0;
+
+	font-family: var(--date-font);
+	font-size: 50px;
+	font-weight: 600;
+	color: #9B9B9B;
 }
