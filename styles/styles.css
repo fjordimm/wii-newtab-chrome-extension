@@ -60,8 +60,8 @@ body
 	margin: 0;
 	padding: 0;
 
-	min-width: 238px;
-	min-height: 124px;
+	min-width: 242px;
+	min-height: 128px;
 
 	display: flex;
 	flex-direction: column;
