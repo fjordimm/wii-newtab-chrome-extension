@@ -171,8 +171,21 @@ body
 
 	height: 76px;
 
-	background-color: brown;
-	border-bottom: 4px solid;
+	border-bottom: 4px solid #2FBDEE;
+}
+
+.bottom-bar-middle-lower
+{
+	flex-grow: 1;
+	
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	background-color: #DADBE0;
 }
 
 .digital-clock-text
