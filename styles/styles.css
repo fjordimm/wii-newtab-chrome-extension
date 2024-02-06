@@ -168,22 +168,39 @@ body
 
 .bottom-bar-left-svg, .bottom-bar-right-svg
 {
+	flex-shrink: 0;
+	
 	margin: 0;
 	padding: 0;
-
-	flex-shrink: 0;
 }
 
-.bottom-bar-mid-svg
+.bottom-bar-middle-container
 {
+	flex-shrink: 1;
+
 	margin: 0;
 	padding: 0;
 
+	display: flex;
+	flex-direction: row;
+
+	position: relative;
+}
+
+.bottom-bar-middle-svg
+{
 	flex-shrink: 1;
+	width: 100%;
+
+	margin: 0;
+	padding: 0;
 }
 
 .bottom-bar-middle
 {
+	position: absolute;
+	width: 100%;
+
 	flex-grow: 1;
 
 	margin: 0;
@@ -204,7 +221,7 @@ body
 
 	height: 76px;
 
-	border-bottom: 4px solid #2FBDEE;
+	border-bottom: 4px solid black;
 }
 
 .bottom-bar-middle-lower
@@ -217,12 +234,6 @@ body
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
-	background: linear-gradient(
-		to bottom,
-		#9F9FA3,
-		#D0D1D9
-	);
 }
 
 .digital-clock-text
