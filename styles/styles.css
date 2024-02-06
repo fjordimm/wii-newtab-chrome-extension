@@ -53,7 +53,6 @@ body
 		#E4E4E4 66.67%,
 		#E4E4E4
 	);
-
 	background-size: 100% 6px;
 }
 
@@ -211,7 +210,11 @@ body
 	flex-direction: column;
 	align-items: center;
 
-	background-color: #DADBE0;
+	background: linear-gradient(
+		to bottom,
+		#9F9FA3,
+		#D0D1D9
+	);
 }
 
 .digital-clock-text

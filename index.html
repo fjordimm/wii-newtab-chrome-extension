@@ -263,22 +263,31 @@
 			<div class="bottom-bar-container">
 				<svg class="bottom-bar-left-svg" width=414 height=189 viewBox="0 0 414 189" >
 					<defs>
-						<filter id="InnerGlowFilter">
-							<feFlood flood-color="#B7B5BA"/>
-							<feComposite operator="out" in2="SourceGraphic" />
-							<feMorphology operator="dilate" radius="40"/>
-							<feGaussianBlur stdDeviation="20"/>
-							<feComposite operator="atop" in2="SourceGraphic"/>
+						<filter id="innershadow" x0="-50%" y0="-50%" width="200%" height="200%">
+							<feGaussianBlur in="SourceAlpha" stdDeviation="50" result="blur"></feGaussianBlur>
+							<feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowDiff"></feComposite>
+
+							<feFlood flood-color="#808080" flood-opacity="1.0"></feFlood>
+							<feComposite in2="shadowDiff" operator="in"></feComposite>
+							<feComposite in2="SourceGraphic" operator="over" result="firstfilter"></feComposite>
+
+
+							<feGaussianBlur in="firstfilter" stdDeviation="50" result="blur2"></feGaussianBlur>
+							<feComposite in2="firstfilter" operator="arithmetic" k2="-1" k3="1" result="shadowDiff"></feComposite>
+
+							<feFlood flood-color="#808080" flood-opacity="1.0"></feFlood>
+							<feComposite in2="shadowDiff" operator="in"></feComposite>
+							<feComposite in2="firstfilter" operator="over"></feComposite>
 						</filter>
 					</defs>
 					
-					<path fill="#D2D3DB" stroke=none filter="url(#InnerGlowFilter)" stroke-width="4" d="
-						M -80,2
+					<path fill="#D2D3DB" stroke=none filter="url(#innershadow)" stroke-width="4" d="
+						M -300,2
 						C	105,2 105,2 211,2
 							312,2 312,78 415,78
-						L	495,78
-							495,279
-							-80,279
+						L	715,78
+							715,489
+							-300,489
 						">
 					</path>
 
