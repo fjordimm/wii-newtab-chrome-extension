@@ -174,6 +174,14 @@ body
 	flex-shrink: 0;
 }
 
+.bottom-bar-mid-svg
+{
+	margin: 0;
+	padding: 0;
+
+	flex-shrink: 1;
+}
+
 .bottom-bar-middle
 {
 	flex-grow: 1;
