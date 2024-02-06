@@ -27,7 +27,7 @@
 					<feGaussianBlur in="SourceAlpha" stdDeviation="50" result="blur"></feGaussianBlur>
 					<feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowDiff"></feComposite>
 
-					<feFlood flood-color="#808080" flood-opacity="1.0"></feFlood>
+					<feFlood flood-color="#909090" flood-opacity="1.0"></feFlood>
 					<feComposite in2="shadowDiff" operator="in"></feComposite>
 					<feComposite in2="SourceGraphic" operator="over" result="firstfilter"></feComposite>
 
@@ -35,7 +35,7 @@
 					<feGaussianBlur in="firstfilter" stdDeviation="50" result="blur2"></feGaussianBlur>
 					<feComposite in2="firstfilter" operator="arithmetic" k2="-1" k3="1" result="shadowDiff"></feComposite>
 
-					<feFlood flood-color="#808080" flood-opacity="1.0"></feFlood>
+					<feFlood flood-color="#909090" flood-opacity="1.0"></feFlood>
 					<feComposite in2="shadowDiff" operator="in"></feComposite>
 					<feComposite in2="firstfilter" operator="over"></feComposite>
 				</filter>
@@ -321,11 +321,11 @@
 
 					<div class="bottom-bar-middle">
 						<div class="bottom-bar-middle-upper">
-							<h2 class="digital-clock-text">17:03</h2>
+							<h2 class="digital-clock-text">12:00</h2>
 						</div>
 	
 						<div class="bottom-bar-middle-lower">
-							<h2 class="date-text">Sat 23/02</h2>
+							<h2 class="date-text">Fri 1/1</h2>
 						</div>
 					</div>
 				</div>

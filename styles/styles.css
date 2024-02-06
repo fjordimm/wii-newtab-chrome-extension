@@ -47,11 +47,11 @@ body
 
 	background: linear-gradient(
 		to bottom,
-		#F0F0F0,
-		#F0F0F0 33.33%,
-		#E4E4E4 33.33%,
-		#E4E4E4 66.67%,
-		#E4E4E4
+		#E6E6E6,
+		#E6E6E6 33.33%,
+		#E8E8E8 33.33%,
+		#E8E8E8 66.67%,
+		#E8E8E8
 	);
 	background-size: 100% 6px;
 }
@@ -220,8 +220,6 @@ body
 	align-items: center;
 
 	height: 76px;
-
-	border-bottom: 4px solid black;
 }
 
 .bottom-bar-middle-lower
@@ -242,18 +240,18 @@ body
 	padding: 0;
 
 	font-family: var(--digital-clock-font);
-	font-size: 88px;
+	font-size: 92px;
 	font-weight: normal;
-	color: #9B9B9B;
+	color: #929292;
 }
 
 .date-text
 {
 	margin: 0;
-	padding: 6px 0 0 0;
+	padding: 15px 0 0 0;
 
 	font-family: var(--date-font);
 	font-size: 50px;
 	font-weight: 600;
-	color: #9B9B9B;
+	color: #696A6A;
 }
