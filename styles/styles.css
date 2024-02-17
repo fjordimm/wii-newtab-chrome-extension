@@ -264,18 +264,6 @@ body
 	color: #696A6A;
 }
 
-.left-bottom-button-container
-{
-	margin: 0;
-	padding: 0;
-}
-
-.left-bottom-button-container > *
-{
-	margin: 0;
-	padding: 0;
-}
-
 .left-bottom-button-svg
 {
 	margin: 0;
@@ -288,4 +276,22 @@ body
 	height: 130px;
 
 	margin: -4px;
+}
+
+.left-bottom-button-link
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #0000ff20;
+}
+
+.left-bottom-button-div
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #ff000020;
 }
