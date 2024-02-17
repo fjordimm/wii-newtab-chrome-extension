@@ -266,14 +266,26 @@ body
 
 .left-bottom-button-container
 {
-	background-color: darksalmon;
-
-	width: 100%;
-	height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 .left-bottom-button-container > *
 {
 	margin: 0;
+	padding: 0;
+}
+
+.left-bottom-button-svg
+{
 	margin: 0;
+	padding: 0;
+}
+
+.left-bottom-button-svg:hover
+{
+	width: 130px;
+	height: 130px;
+
+	margin: -4px;
 }
