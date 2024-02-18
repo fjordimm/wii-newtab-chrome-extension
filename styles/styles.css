@@ -75,7 +75,6 @@ body
 
 	display: flex;
 	flex-direction: column;
-	gap: 12px;
 }
 
 .channels-container-row
@@ -86,7 +85,12 @@ body
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	gap: 12px;
+}
+
+.channel-box
+{
+	margin: 0;
+	padding: 6px;
 }
 
 @keyframes channel-anim
