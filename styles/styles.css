@@ -90,7 +90,9 @@ body
 .channel-box
 {
 	margin: 0;
-	padding: 6px;
+
+	width: 262px;
+	height: 148px;
 }
 
 @keyframes channel-anim
