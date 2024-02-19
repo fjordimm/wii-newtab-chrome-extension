@@ -124,6 +124,11 @@ body
 	margin: -5px;
 }
 
+.channel-svg:hover > foreignObject > .channel-link > .channel > .channel-title
+{
+	text-shadow: 2.5px 2.5px #00000090;
+}
+
 .channel-svg:not(:hover)
 {
 	animation-name: channel-anim-reverse;
@@ -138,7 +143,6 @@ body
 .channel-link
 {
 	text-decoration: none;
-	
 	cursor: default;
 }
 
@@ -305,16 +309,17 @@ body
 	color: #696A6A;
 }
 
-@keyframes left-bottom-button-anim
+@keyframes left-bottom-button-anim-tohover
 {
 	from { width: 122px; height: 122px; margin: 0; }
 	to { width: 130px; height: 130px; margin: -4px; }
 }
 
-@keyframes left-bottom-button-anim-reverse
+@keyframes left-bottom-button-anim-fromhover
 {
 	from { width: 130px; height: 130px; margin: -4px; }
 	to { width: 122px; height: 122px; margin: 0px; }
+}
 }
 
 .left-bottom-button-svg
@@ -325,7 +330,7 @@ body
 
 .left-bottom-button-svg:hover
 {
-	animation-name: left-bottom-button-anim;
+	animation-name: left-bottom-button-anim-tohover;
 	animation-duration: 0.07s;
 	animation-timing-function: ease-out;
 
@@ -336,7 +341,18 @@ body
 
 .left-bottom-button-svg:not(:hover)
 {
-	animation-name: left-bottom-button-anim-reverse;
+	animation-name: left-bottom-button-anim-fromhover;
+	animation-duration: 0.07s;
+	animation-timing-function: ease-out;
+
+	width: 122px;
+	height: 122px;
+	margin: 0px;
+}
+
+.left-bottom-button-svg:hover:active
+{
+	animation-name: left-bottom-button-anim-fromhover;
 	animation-duration: 0.07s;
 	animation-timing-function: ease-out;
 
