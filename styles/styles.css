@@ -124,11 +124,6 @@ body
 	margin: -5px;
 }
 
-.channel-svg:hover > foreignObject > .channel-link > .channel > .channel-title
-{
-	text-shadow: 2.5px 2.5px #00000090;
-}
-
 .channel-svg:not(:hover)
 {
 	animation-name: channel-anim-reverse;
@@ -138,6 +133,22 @@ body
 	width: 250px;
 	height: 136px;
 	margin: 0px;
+}
+
+.channel-svg:hover:active
+{
+	animation-name: channel-anim-reverse;
+	animation-duration: 0.07s;
+	animation-timing-function: ease-out;
+
+	width: 250px;
+	height: 136px;
+	margin: 0px;
+}
+
+.channel-svg:hover > foreignObject > .channel-link > .channel > .channel-title
+{
+	text-shadow: 2.5px 2.5px #00000090;
 }
 
 .channel-link
@@ -319,7 +330,6 @@ body
 {
 	from { width: 130px; height: 130px; margin: -4px; }
 	to { width: 122px; height: 122px; margin: 0px; }
-}
 }
 
 .left-bottom-button-svg
