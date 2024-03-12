@@ -1,4 +1,6 @@
 
+/*
+
 function onUpdate()
 {
 	const now = new Date();
@@ -20,3 +22,5 @@ chrome.cookies.set({
     console.log(chrome.extension.lastError);
     console.log(chrome.runtime.lastError);
 });
+
+*/
