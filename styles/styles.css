@@ -18,6 +18,9 @@
 
 	--channel-inside-width: 242px;
 	--channel-inside-height: 128px;
+
+	--main-animation-duration: 0.09s;
+	--main-animation-timing-function: ease-out;
 }
 
 html, body
@@ -116,8 +119,8 @@ body
 .channel-svg:hover
 {
 	animation-name: channel-anim;
-	animation-duration: 0.07s;
-	animation-timing-function: ease-out;
+	animation-duration: var(--main-animation-duration);
+	animation-timing-function: var(--main-animation-timing-function);
 
 	width: 260px;
 	height: 146px;
@@ -127,8 +130,8 @@ body
 .channel-svg:not(:hover)
 {
 	animation-name: channel-anim-reverse;
-	animation-duration: 0.07s;
-	animation-timing-function: ease-out;
+	animation-duration: var(--main-animation-duration);
+	animation-timing-function: var(--main-animation-timing-function);
 
 	width: 250px;
 	height: 136px;
@@ -138,8 +141,8 @@ body
 .channel-svg:hover:active
 {
 	animation-name: channel-anim-reverse;
-	animation-duration: 0.07s;
-	animation-timing-function: ease-out;
+	animation-duration: var(--main-animation-duration);
+	animation-timing-function: var(--main-animation-timing-function);
 
 	width: 250px;
 	height: 136px;
@@ -230,7 +233,7 @@ body
 	justify-content: space-between;
 }
 
-.bottom-bar-left-svg, .bottom-bar-right-svg
+.bottom-bar-side-svg, .bottom-bar-right-svg
 {
 	flex-shrink: 0;
 	
@@ -320,58 +323,58 @@ body
 	color: #696A6A;
 }
 
-@keyframes left-bottom-button-anim-tohover
+@keyframes side-bottom-button-anim-tohover
 {
 	from { width: 122px; height: 122px; margin: 0; }
 	to { width: 130px; height: 130px; margin: -4px; }
 }
 
-@keyframes left-bottom-button-anim-fromhover
+@keyframes side-bottom-button-anim-fromhover
 {
 	from { width: 130px; height: 130px; margin: -4px; }
 	to { width: 122px; height: 122px; margin: 0px; }
 }
 
-.left-bottom-button-svg
+.side-bottom-button-svg
 {
 	margin: 0;
 	padding: 0;
 }
 
-.left-bottom-button-svg:hover
+.side-bottom-button-svg:hover
 {
-	animation-name: left-bottom-button-anim-tohover;
-	animation-duration: 0.07s;
-	animation-timing-function: ease-out;
+	animation-name: side-bottom-button-anim-tohover;
+	animation-duration: var(--main-animation-duration);
+	animation-timing-function: var(--main-animation-timing-function);
 
 	width: 130px;
 	height: 130px;
 	margin: -4px;
 }
 
-.left-bottom-button-svg:not(:hover)
+.side-bottom-button-svg:not(:hover)
 {
-	animation-name: left-bottom-button-anim-fromhover;
-	animation-duration: 0.07s;
-	animation-timing-function: ease-out;
+	animation-name: side-bottom-button-anim-fromhover;
+	animation-duration: var(--main-animation-duration);
+	animation-timing-function: evar(--main-animation-timing-function);
 
 	width: 122px;
 	height: 122px;
 	margin: 0px;
 }
 
-.left-bottom-button-svg:hover:active
+.side-bottom-button-svg:hover:active
 {
-	animation-name: left-bottom-button-anim-fromhover;
-	animation-duration: 0.07s;
-	animation-timing-function: ease-out;
+	animation-name: side-bottom-button-anim-fromhover;
+	animation-duration: var(--main-animation-duration);
+	animation-timing-function: var(--main-animation-timing-function);
 
 	width: 122px;
 	height: 122px;
 	margin: 0px;
 }
 
-.left-bottom-button-link
+.side-bottom-button-link
 {
 	margin: 0;
 	padding: 0;
@@ -382,7 +385,7 @@ body
 	cursor: default;
 }
 
-.left-bottom-button-div
+.side-bottom-button-div
 {
 	margin: 0;
 	padding: 0;
@@ -394,7 +397,7 @@ body
 	align-items: center;
 }
 
-.left-bottom-button-text
+.side-bottom-button-text
 {
 	margin: 0;
 	padding: 0;
