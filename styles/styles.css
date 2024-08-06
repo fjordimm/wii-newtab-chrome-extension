@@ -173,6 +173,13 @@ body
 	align-items: center;
 }
 
+.channel > img
+{
+	flex-grow: 1;
+	margin: -7px 0 0 0;
+	padding: 0;
+}
+
 .blank-channel
 {
 	margin: 0;
@@ -214,7 +221,7 @@ body
 .channel-title
 {
 	margin: 0;
-	padding: 10px 0 0 0;
+	padding: 0;
 
 	font-family: var(--channel-title-font);
 	font-weight: 400;
