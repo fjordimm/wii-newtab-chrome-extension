@@ -149,11 +149,6 @@ body
 	margin: 0px;
 }
 
-.channel-svg:hover:not(:active) > foreignObject > .channel-link > .channel > .channel-title
-{
-	text-shadow: 2.5px 2.5px #00000090;
-}
-
 .channel-link
 {
 	text-decoration: none;
@@ -219,6 +214,18 @@ body
 	color: #00000007;
 }
 
+/* @keyframes channel-title-anim
+{
+	from { text-shadow: 2px 2px; }
+	to { text-shadow: 2.5px 2.5px; }
+}
+
+@keyframes channel-title-anim-reverse
+{
+	from { text-shadow: 2.5px 2.5px; }
+	to { text-shadow: 2px 2px; }
+} */
+
 .channel-title
 {
 	margin: 0;
@@ -230,6 +237,21 @@ body
 	color: white;
 	text-shadow: 2px 2px #00000090;
 }
+
+/* .channel-svg:not(:hover) > foreignObject > .channel-link > .channel > .channel-title
+{
+	text-shadow: 2px 2px #00000090;
+}
+
+.channel-svg:hover > foreignObject > .channel-link > .channel > .channel-title
+{
+	text-shadow: 2.5px 2.5px #00000090;
+}
+
+.channel-svg:hover:active > foreignObject > .channel-link > .channel > .channel-title
+{
+	text-shadow: 2px 2px #00000090;
+} */
 
 .bottom-bar-container
 {
