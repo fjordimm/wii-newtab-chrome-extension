@@ -149,7 +149,7 @@ body
 	margin: 0px;
 }
 
-.channel-svg:hover > foreignObject > .channel-link > .channel > .channel-title
+.channel-svg:hover:not(:active) > foreignObject > .channel-link > .channel > .channel-title
 {
 	text-shadow: 2.5px 2.5px #00000090;
 }
@@ -175,9 +175,10 @@ body
 
 .channel > img
 {
+	height: 1vh;
 	flex-grow: 1;
 	margin: -7px 0 0 0;
-	padding: 0;
+	padding: 10px 0 10px 0;
 }
 
 .blank-channel
@@ -221,7 +222,7 @@ body
 .channel-title
 {
 	margin: 0;
-	padding: 0;
+	padding: 10px 0 0 0;
 
 	font-family: var(--channel-title-font);
 	font-weight: 400;
