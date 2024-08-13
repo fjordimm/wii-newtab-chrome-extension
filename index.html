@@ -4,27 +4,14 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Haha my new tab</title>
+		<title>Wii Menu</title>
 		<link rel="stylesheet" href="./styles/styles.css">
 	</head>
-
-	<!-- 61x33 -->
-	<!-- (300x169) -> (1234x695), scale = 4.11333333333 -->
-	<!-- 9.32   38.3362666667 -->
-
-	<!-- (1006x695) -->
-	<!-- (886,353) to (1124,477) -->
-
-	<!-- (0,504) (211,504) (414,580) -->
-
-	<!-- 582-612 -->
-
-	<!-- (0,504) to (0,529) to (188,662) -->
 
 	<body>
 		<svg style="margin:0; padding:0; width:0; height:0;">
 			<defs>
-				<filter id="InnerGlowFilterA" x0="-50%" y0="-50%" width="200%" height="200%">
+				<filter id="InnerGlowFilter1" x0="-50%" y0="-50%" width="200%" height="200%">
 					<feGaussianBlur in="SourceAlpha" stdDeviation="50" result="blur"></feGaussianBlur>
 					<feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowDiff"></feComposite>
 
@@ -41,7 +28,7 @@
 					<feComposite in2="firstfilter" operator="over"></feComposite>
 				</filter>
 
-				<filter id="InnerGlowFilterB" x0="-50%" y0="-50%" width="200%" height="200%">
+				<filter id="InnerGlowFilter1" x0="-50%" y0="-50%" width="200%" height="200%">
 					<feGaussianBlur in="SourceAlpha" stdDeviation="15" result="blur"></feGaussianBlur>
 					<feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowDiff"></feComposite>
 
@@ -57,6 +44,26 @@
 					<feComposite in2="shadowDiff" operator="in"></feComposite>
 					<feComposite in2="firstfilter" operator="over"></feComposite>
 				</filter>
+
+				<radialGradient id="CornerInnerGlowGradient1" cx="0.2" cy="0.2" r="0.8">
+					<stop offset="0%" stop-color="#e9edf2"></stop>
+					<stop offset="100%" stop-color="#D3DBE5"></stop>
+				</radialGradient>
+
+				<radialGradient id="CornerInnerGlowGradient2" cx="0.2" cy="0.2" r="0.8">
+					<stop offset="0%" stop-color="#487dd1"></stop>
+					<stop offset="100%" stop-color="#0b51c1"></stop>
+				</radialGradient>
+
+				<radialGradient id="CornerInnerGlowGradient3" cx="0.2" cy="0.2" r="0.8">
+					<stop offset="0%" stop-color="#bc9e42"></stop>
+					<stop offset="100%" stop-color="#a67d03"></stop>
+				</radialGradient>
+
+				<radialGradient id="CornerInnerGlowGradient4" cx="0.2" cy="0.2" r="0.8">
+					<stop offset="0%" stop-color="#599268"></stop>
+					<stop offset="100%" stop-color="#226d36"></stop>
+				</radialGradient>
 			</defs>
 		</svg>
 
@@ -67,7 +74,7 @@
 
 						<div class="channel-box">
 							<svg class="channel-svg" width=250 height=136 viewBox="0 0 250 136">
-								<path fill="#D3DBE5" stroke="#B6B6B6" stroke-width="4" d="
+								<path fill="url(#CornerInnerGlowGradient1)" stroke="#B6B6B6" stroke-width="4" d="
 									M 2,68
 									C	2,2 2,2 40,2
 										125,2 125,2 210,2
@@ -90,7 +97,7 @@
 
 						<div class="channel-box">
 							<svg class="channel-svg" width=250 height=136 viewBox="0 0 250 136">
-								<path fill="#0b51c1" stroke="#B6B6B6" stroke-width="4" d="
+								<path fill="url(#CornerInnerGlowGradient2)" stroke="#B6B6B6" stroke-width="4" d="
 									M 2,68
 									C	2,2 2,2 40,2
 										125,2 125,2 210,2
@@ -113,7 +120,7 @@
 
 						<div class="channel-box">
 							<svg class="channel-svg" width=250 height=136 viewBox="0 0 250 136">
-								<path fill="#a67d03" stroke="#B6B6B6" stroke-width="4" d="
+								<path fill="url(#CornerInnerGlowGradient3)" stroke="#B6B6B6" stroke-width="4" d="
 									M 2,68
 									C	2,2 2,2 40,2
 										125,2 125,2 210,2
@@ -136,7 +143,7 @@
 
 						<div class="channel-box">
 							<svg class="channel-svg" width=250 height=136 viewBox="0 0 250 136">
-								<path fill="#226d36" stroke="#B6B6B6" stroke-width="4" d="
+								<path fill="url(#CornerInnerGlowGradient4)" stroke="#B6B6B6" stroke-width="4" d="
 									M 2,68
 									C	2,2 2,2 40,2
 										125,2 125,2 210,2
@@ -164,6 +171,31 @@
 					</div>
 
 					<div class="channels-container-row">
+
+						<div class="channel-box">
+							<svg class="channel-svg" width=250 height=136 viewBox="0 0 250 136">
+								<path fill="url(#CornerInnerGlowGradient1)" stroke="#B6B6B6" stroke-width="4" d="
+									M 2,68
+									C	2,2 2,2 40,2
+										125,2 125,2 210,2
+										248,2 248,2 248,68
+										248,134 248,134 210,134
+										125,134 125,134 40,134
+										2,134 2,134 2,68
+									">
+								</path>
+								<foreignObject x="4" y="4" width="242" height="128">
+									<a class="channel-link" href="https://docs.google.com/spreadsheets/">
+										<div class="channel">
+											<div class="calendar-channel-top">
+
+											</div>
+										</div>
+									</a>
+								</foreignObject>
+							</svg>
+						</div>
+
 						<div class="channel-box">
 							<svg class="channel-svg" width=250 height=136 viewBox="0 0 250 136">
 								<foreignObject x="4" y="4" width="242" height="128">
@@ -183,13 +215,14 @@
 								</path>
 							</svg>
 						</div>
+
 					</div>
 				</div>
 			</div>
 
 			<div class="bottom-bar-container">
 				<svg class="bottom-bar-side-svg" width=464 height=189 viewBox="0 0 464 189">
-					<path fill="#D2D3DB" filter="url(#InnerGlowFilterA)" d="
+					<path fill="#D2D3DB" filter="url(#InnerGlowFilter1)" d="
 						M -300,2
 						C 105,2 105,2 211,2
 						  312,2 312,78 415,78
@@ -220,7 +253,7 @@
 
 					<foreignObject x="52" y="22" width="122" height="122">
 						<svg class="side-bottom-button-svg" width=122 height=122 viewBox="0 0 122 122">
-							<circle cx="61" cy="61" r="53" fill="#D5D5D5" filter="url(#InnerGlowFilterB)"/>
+							<circle cx="61" cy="61" r="53" fill="#D5D5D5" filter="url(#InnerGlowFilter2)"/>
 							<circle cx="61" cy="61" r="53" fill=none stroke="#2FBDEE" stroke-width="4"/>
 							<path fill="#DADADA" d="
 								M 61,61
@@ -243,7 +276,7 @@
 
 				<div class="bottom-bar-middle-container">
 					<svg class="bottom-bar-middle-svg" width=1200 height=189 viewBox="0 0 1200 189" preserveAspectRatio="none">
-						<path fill="#D2D3DB" filter="url(#InnerGlowFilterA)" d="
+						<path fill="#D2D3DB" filter="url(#InnerGlowFilter1)" d="
 							M -300,78
 							L 1500,78
 							1500,489
@@ -270,7 +303,7 @@
 				</div>
 
 				<svg class="bottom-bar-side-svg" width=464 height=189 viewBox="0 0 464 189">
-					<path fill="#D2D3DB" filter="url(#InnerGlowFilterA)" d="
+					<path fill="#D2D3DB" filter="url(#InnerGlowFilter1)" d="
 						M -300,2
 						C 105,2 105,2 211,2
 						  312,2 312,78 415,78
@@ -301,7 +334,7 @@
 
 					<foreignObject x="275" y="22" width="122" height="122">
 						<svg class="side-bottom-button-svg" width=122 height=122 viewBox="0 0 122 122">
-							<circle cx="61" cy="61" r="53" fill="#D5D5D5" filter="url(#InnerGlowFilterB)"/>
+							<circle cx="61" cy="61" r="53" fill="#D5D5D5" filter="url(#InnerGlowFilter2)"/>
 							<circle cx="61" cy="61" r="53" fill=none stroke="#2FBDEE" stroke-width="4"/>
 							<path fill="#DADADA" d="
 								M 61,61

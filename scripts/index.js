@@ -9,7 +9,8 @@ function onUpdate()
 	const dateWeekday = new Intl.DateTimeFormat("en-US", {weekday: "short"}).format(now);
 	const dateMonth = new Intl.DateTimeFormat("en-US", {month: "numeric"}).format(now);
 	const dateDay = new Intl.DateTimeFormat("en-US", {day: "numeric"}).format(now);
-	document.getElementById("date-text").innerHTML = dateWeekday + " " + dateMonth + "/" + dateDay;
+	const dateMonthName = new Intl.DateTimeFormat("en-US", {month: "long"}).format(now);
+	document.getElementById("date-text").innerHTML = dateWeekday + " " + dateMonth + "/" + dateDay + ":::" + dateMonthName;
 }
 
 onUpdate();

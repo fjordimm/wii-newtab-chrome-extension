@@ -437,3 +437,12 @@ body
 	font-size: 31px;
 	color: #B0B0B0;
 }
+
+.calendar-channel-top
+{
+	margin: 0;
+	padding: 0;
+
+	height: 10px;
+	width: 100%;
+}
