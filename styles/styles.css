@@ -65,7 +65,7 @@ body
 	flex-shrink: 1;
 
 	margin: 0 0 0 0;
-	padding: 59px 0 15px 0;
+	padding: 59px 0 0 0;
 
 	display: flex;
 	flex-direction: column;
@@ -349,6 +349,7 @@ body
 {
 	margin: 0;
 	padding: 15px 0 0 0;
+	white-space: nowrap;
 
 	font-family: var(--date-font);
 	font-size: 50px;
